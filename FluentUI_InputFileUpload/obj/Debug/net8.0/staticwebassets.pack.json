@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\GIT\\NarinderRepo\\Demo\\FluentUI_InputFileUpload\\FluentUI_InputFileUpload\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FluentUI_InputFileUpload.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FluentUI_InputFileUpload.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\GIT\\NarinderRepo\\Demo\\FluentUI_InputFileUpload\\FluentUI_InputFileUpload\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\GIT\\NarinderRepo\\Demo\\FluentUI_InputFileUpload\\FluentUI_InputFileUpload\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\GIT\\NarinderRepo\\Demo\\FluentUI_InputFileUpload\\FluentUI_InputFileUpload\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\GIT\\NarinderRepo\\Demo\\FluentUI_InputFileUpload\\FluentUI_InputFileUpload\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FluentUI_InputFileUpload.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FluentUI_InputFileUpload.props",
+      "PackagePath": "build\\FluentUI_InputFileUpload.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FluentUI_InputFileUpload.props",
+      "PackagePath": "buildMultiTargeting\\FluentUI_InputFileUpload.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FluentUI_InputFileUpload.props",
+      "PackagePath": "buildTransitive\\FluentUI_InputFileUpload.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

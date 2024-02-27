@@ -3,29 +3,31 @@
 @using Microsoft.FluentUI.AspNetCore.Components
 
 <h3>DocumentUpload</h3>
-<FluentInputFile @ref="@myFileUploader" 
-                 DragDropZoneVisible="false"
-                 Mode="InputFileMode.SaveToTemporaryFolder"
-                 Multiple="true"
-                 AnchorId="MyUploadButton"
-                 MaximumFileSize="@(100 * 1024 * 1024)"
-                 Accept=".mp4, .mov, .avi"
-                 OnProgressChange="@(e =>
+@if (showFileUpload)
+{
+    <FluentInputFile @ref="@myFileUploader"
+                     DragDropZoneVisible="false"
+                     Mode="InputFileMode.SaveToTemporaryFolder"
+                     Multiple="true"
+                     AnchorId="MyUploadButton"
+                     MaximumFileSize="@(100 * 1024 * 1024)"
+                     Accept=".mp4, .mov, .avi"
+                     OnProgressChange="@(e =>
                      {
-                         progressPercent = e.ProgressPercent; 
+                         progressPercent = e.ProgressPercent;
                          progressTitle = e.ProgressTitle;
                      })"
-                 OnCompleted="@OnCompleted" />
+                     OnCompleted="@OnCompleted" />
 
-<FluentProgress Min="0" Max="100" Visible="@(progressPercent > 0)" Value="@progressPercent" />
-<FluentLabel Alignment="HorizontalAlignment.Center">
-    @progressTitle
-</FluentLabel>
+    <FluentProgress Min="0" Max="100" Visible="@(progressPercent > 0)" Value="@progressPercent" />
+    <FluentLabel Alignment="HorizontalAlignment.Center">
+        @progressTitle
+    </FluentLabel>
 
-<FluentButton Id="MyUploadButton" Appearance="Appearance.Accent">
-    Upload files
-</FluentButton>
-
+    <FluentButton Id="MyUploadButton" Appearance="Appearance.Accent">
+        Upload files
+    </FluentButton>
+}
 @if (Files.Any())
 {
     <h4>File(s) uploaded:</h4>
@@ -48,9 +50,16 @@
     FluentInputFile? myFileUploader = default!;
     int? progressPercent;
     string? progressTitle;
+    bool showFileUpload = false;
 
     FluentInputFileEventArgs[] Files = Array.Empty<FluentInputFileEventArgs>();
 
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+        showFileUpload = true;
+        StateHasChanged();
+        return base.OnAfterRenderAsync(firstRender);
+    }
     void OnCompleted(IEnumerable<FluentInputFileEventArgs> files)
     {
         Files = files.ToArray();

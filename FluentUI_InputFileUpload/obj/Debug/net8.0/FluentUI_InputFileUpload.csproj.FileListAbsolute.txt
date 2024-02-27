@@ -39,3 +39,4 @@ C:\GIT\NarinderRepo\Demo\FluentUI_InputFileUpload\FluentUI_InputFileUpload\obj\D
 C:\GIT\NarinderRepo\Demo\FluentUI_InputFileUpload\FluentUI_InputFileUpload\obj\Debug\net8.0\FluentUI_InputFileUpload.pdb
 C:\GIT\NarinderRepo\Demo\FluentUI_InputFileUpload\FluentUI_InputFileUpload\obj\Debug\net8.0\FluentUI_InputFileUpload.genruntimeconfig.cache
 C:\GIT\NarinderRepo\Demo\FluentUI_InputFileUpload\FluentUI_InputFileUpload\obj\Debug\net8.0\ref\FluentUI_InputFileUpload.dll
+C:\GIT\NarinderRepo\Demo\FluentUI_InputFileUpload\FluentUI_InputFileUpload\obj\Debug\net8.0\FluentUI_InputFileUpload.sourcelink.json
